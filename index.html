@@ -3,69 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HIVE &mdash; U of T's Product Community</title>
-  <meta name="description" content="HIVE is the University of Toronto's student-run product community. Build, design, and ship real products.">
+  <title>HIVE - U of T's Product Community</title>
+  <meta name="description" content="HIVE is the University of Toronto's student-run product community built around two-way learning.">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="#top" aria-label="HIVE home">
+          <span class="brand-wordmark">HIVE</span>
+        </a>
 
-  <div class="page-bg"></div>
-
-  <main class="page">
-    <section class="hero">
-      <div class="hero-content">
-        <div class="logo-wrapper">
-          <img src="logo.svg" alt="HIVE logo" class="logo" width="90" height="90">
-        </div>
-        <h1 class="heading">HIVE</h1>
-        <p class="subheading">U of T's Product Community</p>
-        <div class="ctas">
-          <a href="#" class="btn btn-primary">Get Involved</a>
-          <a href="#" class="btn btn-outline">Follow Us</a>
-        </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#learning">Learning</a>
+          <a href="#join">Join</a>
+          <a href="#team">Team</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="carousel-section" data-animate>
-      <div class="carousel">
-        <div class="carousel-track">
-          <img src="https://picsum.photos/seed/hive1/680/460" alt="HIVE community event" loading="lazy">
-          <img src="https://picsum.photos/seed/hive2/680/460" alt="HIVE workshop" loading="lazy">
-          <img src="https://picsum.photos/seed/hive3/680/460" alt="HIVE team collaboration" loading="lazy">
-          <img src="https://picsum.photos/seed/hive4/680/460" alt="HIVE product sprint" loading="lazy">
-          <img src="https://picsum.photos/seed/hive5/680/460" alt="HIVE networking session" loading="lazy">
-          <img src="https://picsum.photos/seed/hive6/680/460" alt="HIVE design review" loading="lazy">
-          <img src="https://picsum.photos/seed/hive7/680/460" alt="HIVE presentation" loading="lazy">
-          <img src="https://picsum.photos/seed/hive8/680/460" alt="HIVE social" loading="lazy">
-          <!-- Duplicated set for seamless infinite scroll -->
-          <img src="https://picsum.photos/seed/hive1/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive2/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive3/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive4/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive5/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive6/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive7/680/460" alt="" loading="lazy" aria-hidden="true">
-          <img src="https://picsum.photos/seed/hive8/680/460" alt="" loading="lazy" aria-hidden="true">
+    <main class="page" id="top">
+      <section class="hero" data-animate>
+        <div class="hero-mark">
+          <img src="logo.svg" alt="HIVE logo" class="hero-logo" width="132" height="132">
         </div>
-      </div>
-    </section>
 
-    <section class="about-section" data-animate>
-      <div class="about-card">
-        <h2 class="section-title">What is Hive?</h2>
-        <div class="about-copy">
-          <p>Hive is a student led community at the University of Toronto for people who care about design, technology, creativity, and building things together. We bring students into one space to connect, learn, share ideas, and grow through events, workshops, conversations, and collaborations.</p>
-          <p>Hive was created to make the student experience feel more connected and inspiring. It is a place where curious people can meet others, explore new interests, and be part of a community that values experimentation, learning, and making.</p>
-          <p>At Hive, learning is a two way experience. It is not just about listening or attending. It is about sharing what you know, learning from others, and growing together as a community.</p>
-          <p>Whether you are into UX, product design, coding, creative tech, branding, or just want to meet ambitious and creative people, Hive is a space for you.</p>
+        <p class="eyebrow">University of Toronto / Student-run product community</p>
+        <h1>Two-way learning for people who build.</h1>
+        <p class="hero-text">
+          HIVE is a student-run product community where students bring work, exchange perspective, and leave sharper than they arrived.
+        </p>
+
+        <div class="hero-scene" aria-hidden="true">
+          <img src="hero-exchange.svg" alt="" class="hero-scene-art" width="520" height="280">
         </div>
-      </div>
-    </section>
-  </main>
+
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Join the community</a>
+          <a href="#" class="btn btn-secondary">Follow us on Instagram</a>
+        </div>
+      </section>
+
+      <section class="minimal-section" id="about" data-animate>
+        <p class="section-label">What HIVE is</p>
+        <h2>A product community built on exchange.</h2>
+        <p class="section-copy">
+          You do not just attend. You bring unfinished work, useful references, honest questions,
+          and your own perspective. Other people do the same.
+        </p>
+      </section>
+
+      <section class="minimal-section" id="learning" data-animate>
+        <p class="section-label">How learning works</p>
+        <h2>Bring something in. Leave with something better.</h2>
+
+        <div class="learning-list">
+          <article class="learning-item">
+            <div class="learning-icon" aria-hidden="true">
+              <img src="icon-bring-work.svg" alt="" width="72" height="72">
+            </div>
+            <h3>Bring work in progress</h3>
+            <p>Ideas, drafts, flows, and experiments are welcome here.</p>
+          </article>
+
+          <article class="learning-item">
+            <div class="learning-icon" aria-hidden="true">
+              <img src="icon-share-back.svg" alt="" width="72" height="72">
+            </div>
+            <h3>Share what you know</h3>
+            <p>The community gets stronger when people pass insight along.</p>
+          </article>
+
+          <article class="learning-item">
+            <div class="learning-icon" aria-hidden="true">
+              <img src="icon-cross-discipline.svg" alt="" width="72" height="72">
+            </div>
+            <h3>Learn across disciplines</h3>
+            <p>Design, product, and engineering sharpen one another.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="minimal-section" id="join" data-animate>
+        <p class="section-label">Join HIVE</p>
+        <h2>Join the community. Stay close to what’s next.</h2>
+        <p class="section-copy">
+          Join the community to take part. Follow Instagram for events, updates, and recaps.
+        </p>
+
+        <div class="join-actions">
+          <a href="#" class="btn btn-primary">Join the community</a>
+          <a href="#" class="btn btn-secondary">Follow us on Instagram</a>
+        </div>
+      </section>
+
+      <section class="team-section" id="team" data-animate>
+        <div class="team-header">
+          <p class="section-label">Meet the Team</p>
+          <h2>The team behind HIVE.</h2>
+          <p class="section-copy">
+            Students leading HIVE across programming, partnerships, and design.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-member team-krishna">
+            <div class="team-portrait">
+              <img src="portrait-krishna.svg" alt="Krishna Rana portrait" loading="lazy" width="880" height="1045">
+            </div>
+            <div class="team-meta">
+              <p class="team-role">President</p>
+              <h3>Krishna Rana</h3>
+              <p class="team-degree">Master of Information</p>
+              <p class="team-track">User Experience Design</p>
+            </div>
+          </article>
+
+          <article class="team-member team-harshita">
+            <div class="team-portrait">
+              <img src="portrait-harshita.svg" alt="Harshita Verma portrait" loading="lazy" width="869" height="1081">
+            </div>
+            <div class="team-meta">
+              <p class="team-role">Vice President</p>
+              <h3>Harshita Verma</h3>
+              <p class="team-degree">Master of Information</p>
+              <p class="team-track">User Experience Design</p>
+            </div>
+          </article>
+
+          <article class="team-member team-anushka">
+            <div class="team-portrait">
+              <img src="portrait-anushka.svg" alt="Anushka Rane portrait" loading="lazy" width="778" height="965">
+            </div>
+            <div class="team-meta">
+              <p class="team-role">Secretary</p>
+              <h3>Anushka Rane</h3>
+              <p class="team-degree">Master of Information</p>
+              <p class="team-track">Information Systems Design</p>
+            </div>
+          </article>
+
+          <article class="team-member team-rishi">
+            <div class="team-portrait">
+              <img src="portrait-rishi.svg" alt="Rishi Ashar portrait" loading="lazy" width="1192" height="1192">
+            </div>
+            <div class="team-meta">
+              <p class="team-role">Designer</p>
+              <h3>Rishi Ashar</h3>
+              <p class="team-degree">Master of Information</p>
+              <p class="team-track">User Experience Design</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>HIVE / U of T's Product Community</p>
+      <p>Learn from each other. Build with each other.</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

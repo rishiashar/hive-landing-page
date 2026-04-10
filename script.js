@@ -1,8 +1,20 @@
-document.querySelectorAll('[data-animate]').forEach(el => {
-  new IntersectionObserver(([entry], obs) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      obs.unobserve(entry.target);
+const animatedSections = document.querySelectorAll("[data-animate]");
+
+if (animatedSections.length) {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.18,
+      rootMargin: "0px 0px -8% 0px"
     }
-  }, { threshold: 0.1 }).observe(el);
-});
+  );
+
+  animatedSections.forEach(section => observer.observe(section));
+}

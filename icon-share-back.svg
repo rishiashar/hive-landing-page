@@ -1,0 +1,17 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="shareLoop" d="M18 36C18 24 26 18 36 18C46 18 54 24 54 36C54 48 46 54 36 54C26 54 18 48 18 36Z"/>
+  </defs>
+  <path d="M24 29C27 24.5 31.2 22 36 22C42.7 22 47.8 26.6 49.2 32.8" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M45.8 31L49.8 33.2L52 29" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 43C45 47.5 40.8 50 36 50C29.3 50 24.2 45.4 22.8 39.2" stroke="#E8B400" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M26.2 41L22.2 38.8L20 43" stroke="#E8B400" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="26" cy="26" r="4.5" fill="#FFFFFF"/>
+  <circle cx="46" cy="46" r="4.5" fill="#E8B400"/>
+  <g>
+    <path d="M0 -4.5L4 -2V2L0 4.5L-4 2V-2Z" fill="#FFFFFF"/>
+    <animateMotion dur="5.2s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#shareLoop"/>
+    </animateMotion>
+  </g>
+</svg>
